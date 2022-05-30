@@ -1,0 +1,37 @@
+<div class="course_cont" >
+  <form [formGroup]="cf" >
+  <h2>Select Course</h2> 
+  <mat-form-field appearance="fill">
+    
+    <mat-label>Courses</mat-label>
+    <mat-select formControlName="course">
+      <mat-option *ngFor="let food of q" [value]="food">
+        {{ food }}
+      </mat-option>
+    </mat-select>
+    <mat-error>Select a course</mat-error>
+  </mat-form-field><br>
+  Enter timing: <br>
+  
+  <input [ngxTimepicker]="picker" formControlName="time">
+  <ngx-material-timepicker #picker></ngx-material-timepicker>
+
+ 
+
+      <br> <br><div id="cors" class="table">
+        <ag-grid-angular
+        
+        style="width: 460px; height: 250px ;text-align: left;"
+        class="ag-theme-alpine"
+        [rowData]="rowData "
+        [columnDefs]="columnDefs"
+       
+  
+      >
+      </ag-grid-angular>
+    </div>
+    <button (click)="convertToPDF()" >pdf</button>
+<button mat-flat-button color="primary" [disabled]="cf.invalid">Enquire</button>
+
+</form>
+</div>

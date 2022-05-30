@@ -1,0 +1,16 @@
+.course_cont {
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-bottom: 18px;
+  border-style: groove;
+  border-radius: 5px;
+  margin-top: 20px;
+  align-content: center;
+  background-color: rgba(120, 120, 120, 0.093);
+  text-align: center;
+}
+
+.table{
+   margin-left: 90px;
+   
+}

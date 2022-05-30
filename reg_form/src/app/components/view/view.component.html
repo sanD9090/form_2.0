@@ -1,0 +1,30 @@
+ <div class="container">
+  <table class="table" id="tal">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Fee</th>
+        <th>Timing</th>
+        <th colspan="2">Operation</th>
+
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let s of students">
+        <td>{{ s.id }}</td>
+        <td>{{ s.firstname }}</td>
+        <td>{{ s.lastname }}</td>
+        <td>{{ s.email }}</td>
+        <td>{{ s.dob }}</td>
+        <td><button class="btn btn-danger btn-sm" (click)="deleteStudent(s.id)">DELETE</button></td>
+
+      </tr>
+    </tbody>
+  </table>
+  <button mat-raised-button color="primary" (click)="downloadPDF()"  > <mat-icon>download</mat-icon> Download PDF</button>
+
+</div> 
+<router-outlet></router-outlet> 
+
+

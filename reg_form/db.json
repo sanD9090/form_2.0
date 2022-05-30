@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "firstname": "sanddep",
+      "lastname": "pradhan",
+      "email": "sandeep@pradhan",
+      "gender": "male",
+      "country": "India",
+      "password": "sabdeepradhan",
+      "dob": "2022-05-10T18:30:00.000Z",
+      "file": "",
+      "id": 1
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

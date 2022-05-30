@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "firstname": "asas",
+      "lastname": "saasas",
+      "email": "aaa@asasas",
+      "gender": "male",
+      "country": "Iceland",
+      "password": "asasas",
+      "dob": "2022-05-18T18:30:00.000Z",
+      "file": "",
+      "id": 2
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

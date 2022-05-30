@@ -1,0 +1,24 @@
+<div class="grid">
+  <ag-grid-angular
+    id="cors"
+    style="width: 1000px; height: 300px; text-align: left"
+    class="ag-theme-alpine"
+    [rowData]="rowData | async"
+    [columnDefs]="columnDefs"
+    [suppressExcelExport]="true"
+    (gridReady)="onGridReady($event)"
+    [rowSelection]="rowSelection"
+    (rowClicked)="getSelectedRowData()"
+  >
+  </ag-grid-angular>
+
+  <button mat-raised-button color="primary" (click)="onBtnExport()">
+    <mat-icon>download</mat-icon> Download CSV
+  </button>
+  
+  <button class="pdfbut" mat-raised-button color="primary" (click)="generatePDF()">
+    <mat-icon>download</mat-icon> Download PDF
+  </button>
+  
+
+</div>
